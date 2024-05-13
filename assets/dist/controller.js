@@ -57,10 +57,10 @@ class default_1 extends Controller {
       var divPreview = document.createElement("div");
       divPreview.classList.add('dropzone-preview-image');
       divPreview.style.backgroundImage = 'url("' + event.target.result + '")';
-      var divFileName = document.createElement("div");
-      divFileName.textContent = file.name;
+      // var divFileName = document.createElement("div");
+      // divFileName.textContent = file.name;
       parentDiv.appendChild(divPreview);
-      parentDiv.appendChild(divFileName);
+      // parentDiv.appendChild(divFileName);
 
       _this2.previewImageTarget.parentNode.appendChild(parentDiv);
     });
